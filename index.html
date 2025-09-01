@@ -15,14 +15,16 @@
 
   <script>
     window.onload = function() {
-      // Tambah history supaya back bisa dipantau
+      // Tambah history
       history.pushState(null, null, location.href);
 
-      // Buka Adsterra di tab penuh
-      window.location.href = "https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7";
+      // Buka Adsterra di TAB BARU
+      window.open("https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7", "_blank");
+
+      // Setelah tab baru kebuka, halaman ini tetap hidup → back bisa dikontrol
     };
 
-    // Kalau user klik back → ke blog
+    // Kalau user klik back → lempar ke blog
     window.onpopstate = function() {
       location.replace("https://tipssuksesusiamuda19.blogspot.com/2025/08/im-single-body-margin-0-font-family.html");
     };
