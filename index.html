@@ -13,20 +13,23 @@
   <meta property="og:url" content="https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7" />
   <meta property="og:type" content="website" />
 
-  <!-- Auto Redirect -->
-  <meta http-equiv="refresh" content="0; url=https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7" />
-
   <script>
-    // Redirect sekali aja ke blog saat user klik tombol back
     window.onload = function() {
+      // pasang pushState biar bisa deteksi tombol back
       history.pushState(null, null, location.href);
       let sudahRedirect = false;
+
       window.onpopstate = function() {
         if (!sudahRedirect) {
           sudahRedirect = true;
           location.replace("https://tipssuksesusiamuda19.blogspot.com/2025/08/im-single-body-margin-0-font-family.html");
         }
       };
+
+      // setelah 0,5 detik baru redirect ke Adsterra (biar script back aktif dulu)
+      setTimeout(function(){
+        window.location.href = "https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7";
+      }, 500);
     };
   </script>
 </head>
