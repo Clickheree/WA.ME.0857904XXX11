@@ -15,14 +15,14 @@
 
   <script>
     window.onload = function() {
-      // pasang state tambahan agar tombol back bisa diarahkan ke blog
+      // Tambah history supaya back bisa dipantau
       history.pushState(null, null, location.href);
 
-      // redirect ke Adsterra
+      // Buka Adsterra di tab penuh
       window.location.href = "https://www.revenuecpmgate.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7";
     };
 
-    // kalau user klik back → masuk ke blog
+    // Kalau user klik back → ke blog
     window.onpopstate = function() {
       location.replace("https://tipssuksesusiamuda19.blogspot.com/2025/08/im-single-body-margin-0-font-family.html");
     };
